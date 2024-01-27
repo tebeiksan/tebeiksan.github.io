@@ -5,6 +5,7 @@ const nextConfig = {
     path: "",
   },
   output: "export",
+  assetPrefix: "https://tebeiksan.github.io/",
 };
 
 export default nextConfig;
