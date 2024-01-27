@@ -5,7 +5,11 @@ const nextConfig = {
     path: "",
   },
   output: "export",
-  assetPrefix: "https://tebeiksan.github.io/",
+  env: {
+    APP_ENV: process.env.APP_ENV,
+  },
+  assetPrefix:
+    process.env.APP_ENV == "local" ? "/" : "https://tebeiksan.github.io/",
 };
 
 export default nextConfig;
