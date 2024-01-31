@@ -4,7 +4,7 @@ import Main from "./Main";
 
 export default function Default({ children }) {
   return (
-    <div className="container relative mx-auto">
+    <div className="container relative">
       <Navbar />
       <Main>{children}</Main>
     </div>

@@ -10,17 +10,19 @@ const navigations = [
 
 export default function Navbar() {
   return (
-    <div
-      className="container fixed top-0 mx-auto flex items-center justify-between bg-white/80 backdrop-blur-sm"
-      style={{ height: `var(--navbar-height)` }}
-    >
-      <Image src="/next.svg" height="25" width="100" alt="" />
-      <div className="flex gap-5 ">
-        {navigations.map((nav) => (
-          <Link href={nav.path} key={nav.id}>
-            {nav.label}
-          </Link>
-        ))}
+    <div className=" fixed left-0 right-0 top-0 bg-white/80 backdrop-blur-sm">
+      <div
+        className="container flex w-full items-center justify-between px-5 md:px-[5rem] "
+        style={{ height: `var(--navbar-height)` }}
+      >
+        <Image src="/next.svg" height="25" width="100" alt="" />
+        <div className="flex gap-5 ">
+          {navigations.map((nav) => (
+            <Link href={nav.path} key={nav.id}>
+              {nav.label}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
